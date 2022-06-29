@@ -1,0 +1,333 @@
+/* xm - iPhone SE */
+@media (max-width: 575px) {
+
+    .navbar .category h5,
+    #banner .card h3,
+    #banner .card button,
+    #information .col h4,
+    #categories .categories-body h5,
+    #trendyFoods .trendy-navbar a,
+    #shopNow .card h3,
+    #shopNow .card button,
+    footer .footer-body .submission-area h2 {
+        font-size: 18px;
+    }
+
+    #trendyFoods .trendy-body .product-name,
+    #trendyFoods .trendy-body .col .price-area,
+    #blog .blog-body .product-title,
+    footer .footer-body .submission-area button {
+        font-size: 15px;
+    }
+
+    #categories .categories-header h2,
+    #trendyFoods .trendy-header h2,
+    #blog h2 {
+        font-size: 30px;
+    }
+
+
+
+    #banner .card h1,
+    #shopNow .card h2 {
+        font-size: 40px;
+    }
+
+    #trendyFoods .trendy-navbar ul {
+        display: grid;
+        grid-template-columns: repeat(3, 50px);
+        grid-template-rows: repeat(2, 50px);
+    }
+
+    #blog .blog-body .card_2 {
+        display: none;
+    }
+}
+
+
+/* sm - galaxy tab s4 */
+@media (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+
+    .header_main {
+        display: none;
+    }
+
+    .search_area {
+        height: 60px;
+        position: relative;
+    }
+
+    .search_area .searchBar {
+        position: absolute;
+        right: 110px;
+    }
+
+    .search_area .searchBar input {
+        height: 50px;
+        width: 300px;
+        display: none;
+    }
+
+    .search_area .searchBar button {
+        height: 50px;
+        width: 50px;
+        margin-left: 0px;
+    }
+
+    .search_area .cart :last-child {
+        margin-left: 10px;
+    }
+
+    #topnav.responsive {
+        position: relative;
+    }
+
+    .navbar .collapsible-icon {
+        font-size: 24px;
+    }
+
+    .navbar .navbar-item {
+        display: none;
+    }
+
+    .navbar .navbar-item ul {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0px 8px 8px 0px rgba(39, 117, 19, 0.445);
+    }
+
+
+    .navbar .navbar-item .topnav>li {
+        margin: 0 15px;
+    }
+
+    .navbar .navbar-item ul li ul {
+        background-color: #49A010;
+        border: 5px solid #49A010;
+        right: 139px;
+        top: 40px;
+    }
+
+    .navbar .container {
+        justify-content: space-between;
+    }
+
+    .navbar .navbar-item.responsive {
+        display: block;
+    }
+
+
+    #banner .card h1 {
+        font-size: 50px;
+        width: 80%;
+    }
+
+    #information .container .information-area,
+    #categories .categories-body,
+    #trendyFoods .trendy-body {
+        justify-content: space-evenly;
+    }
+
+    #trendyFoods .trendy-navbar ul {
+        gap: 40px;
+    }
+
+
+    #trendyFoods .trendy-body .col {
+        width: 200px;
+        margin-bottom: 0px;
+    }
+
+    #trendyFoods .trendy-body .col img {
+        height: 220px;
+    }
+
+    #shopNow .container {
+        margin: 0 auto;
+    }
+
+    #shopNow .card h2 {
+        font-size: 20px;
+    }
+
+    #shopNow .card h2 {
+        font-size: 40px;
+    }
+
+    #sellingStatus .container .row {
+        flex-wrap: wrap;
+    }
+
+    #sellingStatus .row .col {
+        margin-top: 30px;
+    }
+
+    #blog {
+        margin: 40px 0;
+    }
+
+    #blog .blog-body {
+        justify-content: center !important;
+    }
+
+    #clientLogo .container .row {
+        width: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        padding-bottom: 80px;
+    }
+
+    footer .footer-head {
+        padding: 20px 0 10px 0;
+    }
+
+    footer .footer-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    footer .footer-body .navlink-area {
+        padding-left: 0;
+    }
+
+    footer .footer-body .submission-area h2 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: 0px;
+    }
+
+    footer .footer-body .submission-area button {
+        margin-bottom: 10px;
+    }
+
+    footer .footer-body .submission-area .payment-method a {
+        margin-right: 10px;
+    }
+}
+
+
+/* md - Surface Pro 7 */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 95%;
+    }
+
+    .header_main {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .search_area {
+        height: 100px;
+    }
+
+    .search_area .searchBar input {
+        height: 50px;
+        width: 300px;
+    }
+
+    .search_area .searchBar button {
+        height: 50px;
+        width: 50px;
+        margin-left: 0px;
+    }
+
+    .navbar .category {
+        min-width: 230px;
+    }
+
+    .navbar .navbar-item .topnav>li {
+        margin-left: 22px;
+    }
+
+    #shopNow .container {
+        margin: 0 auto;
+    }
+
+    #shopNow .card h2 {
+        font-size: 45px;
+    }
+
+    #blog .blog-body {
+        justify-content: center !important;
+    }
+
+    #blog .blog-body .card_1 .productDetails-area .read-more {
+        position: static;
+        text-align: right;
+        margin-top: 0;
+    }
+
+    footer {
+        padding-bottom: 80px;
+    }
+
+    footer .footer-head {
+        padding: 20px 0 10px 0;
+    }
+
+    footer .footer-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    footer .footer-body .navlink-area {
+        padding-left: 0;
+    }
+}
+
+
+/* lg - Nest Hub */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 95%;
+    }
+
+    #blog .blog-body {
+        justify-content: space-between;
+    }
+
+    #blog .blog-body .col {
+        width: 460px;
+    }
+
+    #blog .blog-body .card_1 img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #blog .blog-body .card_1 .productDetails-area .read-more {
+        right: 40px;
+    }
+
+    #blog .blog-body .card_2 .productDetails-area {
+        margin: auto 16px auto 10px;
+    }
+
+    footer .footer-body {
+        display: grid;
+        grid-template-columns: 4fr 1fr 2fr 4fr;
+    }
+
+    footer .footer-body .navlink-area {
+        padding-left: 5px;
+    }
+
+    footer .footer-body .FAQ {
+        padding-left: 0px;
+    }
+}
+
+
+/* xl - Nest Hub Max */
+@media (max-width: 1399.98px) {}
