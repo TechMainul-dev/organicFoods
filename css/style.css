@@ -207,7 +207,6 @@ i {
 
 .navbar .container {
     display: flex;
-    justify-content: baseline;
     align-items: center;
     font-size: 24px;
 }
@@ -223,7 +222,6 @@ i {
     background: var(--primary-color);
     color: #ffffff;
     text-align: center;
-    justify-content: baseline;
     align-items: center;
 }
 
@@ -729,18 +727,18 @@ i {
 
 
 
-/*==============clientLogo section css start=====*/
-#clientLogo {
+/*==============clients-area section css start=====*/
+#clients-area {
     display: flex;
     align-items: center;
 }
 
-#clientLogo .container {
+#clients-area .container {
     border: 1px solid var(--primary-color);
     border-radius: 0 50px;
 }
 
-#clientLogo .container .row {
+#clients-area .container .row {
     width: 98%;
     display: flex;
     flex-wrap: wrap;
@@ -750,7 +748,7 @@ i {
     margin: 32px auto;
 }
 
-/*==============clientLogo section css end=======*/
+/*==============clients-area section css end=======*/
 
 
 
