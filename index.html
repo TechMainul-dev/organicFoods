@@ -8,7 +8,7 @@
     <title>Organic Foods | Home</title>
     <link rel="site icon" href="./img/icon.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responsible.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -77,36 +77,38 @@
         </div>
         <hr class="hr">
 
-        <div class="row navbar" id="myTopnav">
-            <div class="container">
-                <div class="category">
-                    <h5>Shop by Category</h5>
-                </div>
-
-                <span class="collapsible-icon" onclick="myFunction()">
+        <div class="container">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="check-btn">
                     <i class="fa-solid fa-bars"></i>
-                </span>
-                <div class="navbar-item">
-                    <ul class="topnav">
-                        <li><a href="#" class="active">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropbtn">Product <i class="fa-solid fa-angle-down"></i></a>
-                            <ul class="dropdown-content">
-                                <li><a href="#">Fruits</a></li>
-                                <li><a href="#">Vegetables</a></li>
-                                <li><a href="#">Drinks</a></li>
-                                <li><a href="#">Eggs</a></li>
-                                <li><a href="#">Cake</a></li>
-                                <li><a href="#">Meats</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                </label>
+                <label class="shop-by-category">Shop by Category</label>
 
-                </div>
-            </div>
+                <ul class="mainMenu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="subMenu">
+                        <label for="subMenu" class="subMenu-btn">
+                            <a class="dropbtn">Product
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                        </label>
+
+                        <ul class="dropdown-items">
+                            <li><a href="#">Fruits</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Drinks</a></li>
+                            <li><a href="#">Eggs</a></li>
+                            <li><a href="#">Cake</a></li>
+                            <li><a href="#">Meats</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!--====================== header-area end ======================-->
@@ -216,17 +218,53 @@
 
 
     <!--======================productAvailable section start======================-->
-    <!-- <section id="productAvailable">
+    <section id="productAvailable">
         <div class="container">
             <div class="itemDetails">
                 <div class="item item_1">
-                    <div class="col"> </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+                    <div class="col img-area">
+                        <img src="./img/foods.jpg" alt="img/jpg">
+                        <div class="product-type">20% off</div>
+                    </div>
+
+                    <div class="col product-details">
+                        <h2 class="row product-name">Organic Tomato</h2>
+                        <div class="row product-price">
+                            <p class="new-price">$25.00</p>
+                            <p class="olp-price muted"><s>$25.00</s> </p>
+                        </div>
+                        <div class="row progress-bar">
+                            <div class="availability muted">
+                                <span class="available">Available: 237</span>
+                                <span class="sold">Already Sold: 23</span>
+                            </div>
+                            <div class="progress">
+                                <div class="bar" style="width:35%">
+                                    <!-- <p class="percent">35%</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row countdown">
+                            <p class="box day">20 <br> days</p>
+                            <p class="box hour">22 <br> hr</p>
+                            <p class="box min">10 <br> min</p>
+                            <p class="box second">56 <br> sec</p>
+                        </div>
+                    </div>
+
+                    <div class="col others-slide">
+                        <div class="img img-1">
+                            <img src="./img/foods.jpg" alt="img">
+                        </div>
+                        <div class="img img-2">
+                            <img src="./img/lemon_2.png" alt="img">
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </section> -->
+    </section>
 
     <!--======================productAvailable section end========================-->
 
@@ -634,20 +672,6 @@
         </div>
     </footer>
     <!--======================footer area end==-======================-->
-
-
-
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
 </body>
 
 </html>
