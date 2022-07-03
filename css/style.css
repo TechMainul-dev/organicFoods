@@ -421,6 +421,7 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
     margin: 0 10px;
 }
 
+.checked,
 #banner #slide1:checked~#bullets label:nth-child(1),
 #banner #slide2:checked~#bullets label:nth-child(2),
 #banner #slide3:checked~#bullets label:nth-child(3),
