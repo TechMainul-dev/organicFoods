@@ -53,9 +53,10 @@
     }
 
     #trendyFoods .trendy-navbar ul {
-        display: grid;
-        grid-template-columns: repeat(3, 50px);
-        grid-template-rows: repeat(2, 50px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
     }
 
     #blog .blog-body .card_2 {
@@ -74,7 +75,6 @@
         top: 100px;
     }
 
-
     #banner .card h1 {
         font-size: 50px;
         width: 80%;
@@ -85,6 +85,7 @@
     #trendyFoods .trendy-body {
         justify-content: space-evenly;
     }
+
 
     #trendyFoods .trendy-navbar ul {
         gap: 40px;
@@ -173,6 +174,11 @@
         width: 95%;
     }
 
+    header {
+        background-color: #fff;
+        height: 135px;
+    }
+
     .header_main {
         display: none;
     }
@@ -212,13 +218,14 @@
 
     nav ul.mainMenu {
         position: fixed;
-        width: 50%;
+        width: 100%;
         height: 100vh;
         background-color: #28500d;
-        top: 135px;
+        top: 134px;
         right: -100%;
         text-align: center;
         transition: .8s ease-in-out;
+        z-index: 5;
     }
 
     nav ul li {
@@ -250,6 +257,22 @@
         display: block;
     }
 
+    #banner #slides .slide {
+        height: 60%;
+    }
+
+    #banner .card {
+        width: 90%;
+    }
+
+    #banner #bullets {
+        top: 500px;
+    }
+
+    #information .container .information-area {
+        margin-top: -200px;
+    }
+
     #productAvailable .item .img-area {
         width: 200px;
         margin: 15px;
@@ -276,6 +299,10 @@
 
     #productAvailable .item .others-slide {
         display: none;
+    }
+
+    #productAvailable #radio-btn {
+        visibility: hidden;
     }
 
     #shopNow .container {
@@ -313,6 +340,17 @@
     footer .footer-body .navlink-area {
         padding-left: 0;
     }
+
+    footer .footer-body .submission-area input {
+        width: 70%;
+    }
+
+    /* sdsd  */
+    footer .footer-body .about-area,
+    footer .footer-body .navlink-area,
+    footer .footer-body .FAQ {
+        font-size: 16px;
+    }
 }
 
 
@@ -320,6 +358,10 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .container {
         width: 95%;
+    }
+
+    #productAvailable #radio-btn {
+        top: 2320px;
     }
 
     #blog .blog-body {
@@ -348,12 +390,18 @@
         grid-template-columns: 4fr 1fr 2fr 4fr;
     }
 
+    footer .footer-body .about-area {
+        font-size: 16px;
+    }
+
     footer .footer-body .navlink-area {
         padding-left: 5px;
+        font-size: 16px;
     }
 
     footer .footer-body .FAQ {
         padding-left: 0px;
+        font-size: 16px;
     }
 }
 
