@@ -618,7 +618,7 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
 
 /* slider area css  */
 
-#productAvailable input[type=checkbox] {
+#productAvailable input[type=radio] {
     display: none;
 }
 
