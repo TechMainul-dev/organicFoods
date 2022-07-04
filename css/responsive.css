@@ -35,6 +35,12 @@
         height: 46px;
     }
 
+    #information .container .information-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
     #productAvailable .item {
         position: relative;
         padding-bottom: 45px;
@@ -59,9 +65,14 @@
         width: 100%;
     }
 
+    #sellingStatus .container .row {
+        padding-left: 5px;
+    }
+
     #blog .blog-body .card_2 {
         display: none;
     }
+
 }
 
 
