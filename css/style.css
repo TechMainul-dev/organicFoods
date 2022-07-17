@@ -366,9 +366,38 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
 }
 
 #banner #bannerSlides .inner {
-    transition: margin-left .8s cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
     height: 629px;
+    background: #003459;
+    transition: margin-left .8s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    background-size: 100% 100% !important;
+    /* animation: slider 20s ease-in-out infinite; */
+}
+
+#banner #bannerSlides .inner:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slider {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
 }
 
 #banner #bannerSlides .slide {

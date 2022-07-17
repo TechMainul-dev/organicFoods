@@ -69,8 +69,30 @@
         padding-left: 5px;
     }
 
+    #blog {
+        margin: 50px 0;
+    }
+
     #blog .blog-body .card_2 {
         display: none;
+    }
+
+    #clients-area .container .row {
+        gap: 0px;
+        margin: 5px auto;
+        justify-content: space-around;
+    }
+
+    #clients-area .container .row img {
+        width: 150px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+    footer .footer-body .FAQ {
+        padding-left: 0px;
     }
 
 }
