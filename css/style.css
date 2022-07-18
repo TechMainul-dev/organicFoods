@@ -155,30 +155,47 @@ header {
     height: 60px;
 }
 
-.search_area .searchBar input {
-    width: 400px;
-    border: 1px solid var(--primary-color);
+.search-container {
+    position: relative;
+    height: 60px;
+    right: -170px;
 }
 
-.search_area .searchBar input:focus {
-    outline: none;
+.searchbutton {
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 60px;
+    height: 60px;
+    padding: 19px;
+    cursor: pointer;
 }
 
-.search_area .searchBar input[type=text] {
-    padding: 16.5px;
+.search:focus+.searchbutton {
+    transition-duration: 0.4s;
 }
 
-.search_area .searchBar ::placeholder {
+.search-container ::placeholder {
     color: var(--primary-color);
 }
 
-.search_area .searchBar button {
-    width: 60px;
-    margin-left: -5px;
+.search {
+    position: absolute;
+    background-color: #fff;
+    outline: none;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    width: 400px;
+    height: 100%;
+    transition-duration: 0.4s;
+    padding: 16.5px;
 }
 
-.search_area .cart :last-child {
-    margin-left: 20px;
+.expandright {
+    right: 0px;
+}
+
+.search_area .notification-area {
+    padding: 6px;
 }
 
 .search_area .notification-area .item {
@@ -198,6 +215,10 @@ header {
     height: 15px;
     font-size: 10px;
     z-index: 1;
+}
+
+.search_area .wishlist {
+    margin-right: 20px;
 }
 
 .search_area .notification-area .wishlist .liked {
