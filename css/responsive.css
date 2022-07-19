@@ -104,6 +104,10 @@
         padding-left: 0px;
     }
 
+    footer .footer-body .about-area .social-icon a {
+        margin-right: 10px;
+    }
+
 }
 
 
@@ -568,7 +572,7 @@
     footer .footer-body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
+        gap: 100px 20px;
     }
 
     footer .footer-body .navlink-area {
@@ -576,7 +580,7 @@
     }
 
     footer .footer-body .submission-area input {
-        width: 70%;
+        width: 80%;
     }
 
     /* sdsd  */
