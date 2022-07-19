@@ -76,9 +76,9 @@ i {
 
 /*==============header area css start===============*/
 header {
+    background-color: #fff;
     position: sticky;
     top: 0;
-    background-color: #fff;
     z-index: 6;
 }
 
@@ -244,7 +244,7 @@ nav {
     box-sizing: border-box;
 }
 
-label.shop-by-category {
+nav label.shop-by-category {
     color: #fff;
     font-size: 24px;
     line-height: 60px;
@@ -252,6 +252,10 @@ label.shop-by-category {
     font-weight: bold;
     float: left;
     background-color: var(--primary-color);
+}
+
+nav ul.mainMenu {
+    overflow-y: auto;
 }
 
 nav ul li {
@@ -392,7 +396,7 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
     background: #003459;
     transition: margin-left .8s cubic-bezier(0.770, 0.000, 0.175, 1.000);
     background-size: 100% 100% !important;
-    /* animation: slider 20s ease-in-out infinite; */
+    animation: slider 30s infinite;
 }
 
 #banner #bannerSlides .inner:hover {
@@ -593,7 +597,7 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
     border-radius: 0 50px;
 }
 
-#productAvailable .item .img-area .product-type {
+#productAvailable .item .img-area .special-offer {
     width: 101px;
     padding: 5px;
     font-size: 14px;
@@ -908,6 +912,7 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
 
 #sellingStatus {
     display: flex;
+    margin-top: 100px;
 }
 
 #sellingStatus .container .row {

@@ -54,13 +54,17 @@
     #productAvailable .item .product-details .progress-bar .availability,
     #productAvailable .item .product-details .progress-bar .progress {
         position: absolute;
-        bottom: 10px;
+        bottom: 13px;
         left: 10%;
         width: 82%;
     }
 
     #productAvailable .item .product-details .progress-bar .availability {
         bottom: 30px;
+    }
+
+    #productAvailable .item .product-details .countdown .box {
+        padding: 2px 0;
     }
 
     #trendyFoods .trendy-navbar ul {
@@ -214,7 +218,7 @@
 
     header {
         background-color: #fff;
-        height: 100px;
+        height: 124px;
     }
 
     .header_main {
@@ -246,6 +250,7 @@
         padding: 0;
         top: 62px;
         border-width: 0px;
+        z-index: 1;
     }
 
     .search:focus {
@@ -265,8 +270,10 @@
     /* search bar area end  */
 
     nav label.shop-by-category {
-        font-size: 20px;
+        font-size: 14px;
         padding: 0 30px;
+        line-height: 40px;
+        margin: 10px;
     }
 
     nav ul li a {
@@ -276,6 +283,22 @@
     nav .check-btn {
         display: block;
         transition: .5s ease-in-out;
+    }
+
+    nav .fa-xmark {
+        padding: 5px 10px;
+        position: absolute;
+        top: 75px;
+        right: 42px;
+        background-color: #fff;
+        display: none;
+        font-size: 24px;
+        z-index: 0;
+    }
+
+    nav #check:checked~.check-btn .fa-xmark {
+        display: block;
+        transition: .8s ease-in-out;
     }
 
     nav ul.mainMenu {
@@ -288,12 +311,13 @@
         text-align: center;
         transition: .8s ease-in-out;
         z-index: 5;
+        overflow-y: scroll;
     }
 
     nav ul li {
         display: block;
         margin: 30px 0;
-        line-height: 30px;
+        line-height: 20px;
     }
 
     nav ul li a {
@@ -323,12 +347,86 @@
         height: 60%;
     }
 
+    #banner #bannerSlides .inner {
+        height: 400px;
+    }
+
     #banner .card {
-        width: 90%;
+        max-width: 350px;
+        height: 200px;
+    }
+
+    #banner .card h3 {
+        font-size: 14px;
+    }
+
+    #banner .card h1 {
+        font-size: 26px;
+        margin: 8px auto;
+    }
+
+    #banner .card button {
+        width: 120px;
+        height: 40px;
+        font-size: 16px;
     }
 
     #banner #bullets {
-        top: 740px;
+        top: 500px;
+    }
+
+    #information .container .information-area {
+        margin: 50px 0;
+    }
+
+    #information .col {
+        text-align: left;
+        margin: 15px 0;
+        width: 280px;
+    }
+
+    #information .col img {
+        width: 45px;
+        margin: 5px 20px 0 10px;
+        float: left;
+    }
+
+    #information .col h4 {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    #information .col p {
+        font-size: 14px;
+    }
+
+    #information .information-area .car img {
+        margin-top: 15px;
+    }
+
+    #information .col:nth-child(odd) {
+        margin-bottom: 20px;
+    }
+
+    #categories .categories-body {
+        gap: 8px 30px;
+    }
+
+    #categories .categories-header h2 {
+        font-size: 24px;
+    }
+
+    #categories .categories-body img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #categories .categories-body h5 {
+        font-size: 14px;
+    }
+
+    #productAvailable .itemDetails {
+        margin: 50px auto;
     }
 
     #productAvailable .item .img-area {
@@ -337,11 +435,27 @@
     }
 
     #productAvailable .item .img-area img {
-        height: 200px;
+        height: 150px;
+    }
+
+    #productAvailable .item .img-area .special-offer {
+        width: 70px;
+        font-size: 11px;
+    }
+
+    #productAvailable .item .product-details h2 {
+        margin-left: -5px;
     }
 
     #productAvailable .item .product-details .product-price {
+        gap: 10px;
+        font-weight: bold;
         margin-bottom: 0px;
+        font-size: 14px;
+    }
+
+    #productAvailable .item .product-details .progress-bar .availability {
+        font-size: 14px;
     }
 
     #productAvailable .item .product-details .countdown {
@@ -352,7 +466,8 @@
     }
 
     #productAvailable .item .product-details .countdown .box {
-        font-size: 10px;
+        width: 45px;
+        font-size: 11px;
     }
 
     #productAvailable .item .others-slide {
@@ -363,12 +478,73 @@
         visibility: hidden;
     }
 
+    #trendyFoods .trendy-header h2 {
+        font-size: 24px;
+    }
+
+    #trendyFoods .trendy-navbar ul {
+        gap: 20px;
+        margin: 0px auto 15px auto;
+    }
+
+    #trendyFoods .trendy-navbar a {
+        font-size: 16px;
+    }
+
+    #trendyFoods .trendy-body .product-name {
+        font-size: 15px;
+        margin-left: 42%;
+    }
+
+    #trendyFoods .trendy-body .col .price-area {
+        font-size: 13px;
+        margin-left: 32%;
+    }
+
+    #trendyFoods .trendy-body .col .price-area .current-price {
+        margin-right: 12px;
+    }
+
+    #shopNow {
+        height: 220px;
+        background-position: center;
+    }
+
     #shopNow .container {
-        margin: 0 auto;
+        margin: 50px auto;
+        align-items: stretch;
+    }
+
+    #shopNow .card h3 {
+        font-size: 14px;
+        margin-top: 30px;
     }
 
     #shopNow .card h2 {
-        font-size: 45px;
+        font-size: 26px;
+        margin: 10px auto 20px auto;
+    }
+
+    #shopNow .card button {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    #sellingStatus {
+        margin-top: 40px;
+    }
+
+    #sellingStatus .product-details .row img {
+        margin-right: 10px;
+    }
+
+    #sellingStatus .product-details .row .product-details .product-price {
+        gap: 10px;
+    }
+
+    #blog {
+        margin: 50px 0;
     }
 
     #blog .blog-body {
@@ -414,6 +590,10 @@
 
 /* lg - Nest Hub */
 @media (min-width: 992px) and (max-width: 1199px) {
+    header {
+        height: 123px;
+    }
+
     .container {
         width: 95%;
     }
