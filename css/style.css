@@ -88,6 +88,7 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .header_main .hotline_number img {
@@ -252,6 +253,7 @@ nav label.shop-by-category {
     font-weight: bold;
     float: left;
     background-color: var(--primary-color);
+    cursor: pointer;
 }
 
 nav ul.mainMenu {
@@ -915,7 +917,14 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
     margin-top: 100px;
 }
 
-#sellingStatus .container .row {
+#sellingStatus .row .col hr {
+    border-top: 1px solid var(--primary-color);
+    width: 77px;
+    margin-top: 3.5px;
+
+}
+
+#sellingStatus .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1008,6 +1017,7 @@ nav .dropdown #subMenu:checked~ul.dropdown-items {
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 #blog .blog-body .card_1 .productDetails-area .read-more {
@@ -1066,6 +1076,10 @@ footer .footer-body {
 
 footer .footer-body .about-area .social-link {
     margin: 39px 0 17px 0;
+}
+
+footer .footer-body .about-area .social-icon a {
+    margin-right: 30px;
 }
 
 footer .footer-body .social-icon .fa-brands {
